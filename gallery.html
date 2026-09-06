@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yandisa's Portfolio | Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Yandisa</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="page-header">
+        <div class="container">
+            <h1>My Gallery</h1>
+            <p>A collection of moments and memories</p>
+        </div>
+    </section>
+
+    <!-- ========== SLIDESHOW SECTION ========== -->
+    <section class="slideshow-section">
+        <div class="container">
+            <h2><i class="fas fa-images"></i> Featured Gallery</h2>
+            
+            <!-- Slideshow Container -->
+            <div class="slideshow-container">
+                <!-- Slides -->
+                <div class="slide fade">
+                    <img src="images/gallery/image1.jpg" alt="Gallery Image 1">
+                    <div class="slide-caption">
+                        <h3>Beautiful Sunset</h3>
+                        <p>A breathtaking sunset in the Eastern Cape</p>
+                    </div>
+                </div>
+
+                <div class="slide fade">
+                    <img src="images/gallery/image2.jpg" alt="Gallery Image 2">
+                    <div class="slide-caption">
+                        <h3>WSU Campus Life</h3>
+                        <p>My journey at Walter Sisulu University</p>
+                    </div>
+                </div>
+
+                <div class="slide fade">
+                    <img src="images/gallery/image3.jpg" alt="Gallery Image 3">
+                    <div class="slide-caption">
+                        <h3>Community Moments</h3>
+                        <p>Spending time with family and friends</p>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+
+            <!-- Dots/Indicators -->
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <!-- Slideshow Controls -->
+            <div class="slideshow-controls">
+                <button onclick="toggleAutoSlide()" class="btn btn-primary" id="autoSlideBtn">
+                    <i class="fas fa-play"></i> Auto Play
+                </button>
+                <button onclick="resetSlideShow()" class="btn btn-secondary">
+                    <i class="fas fa-redo"></i> Reset
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GALLERY GRID ========== -->
+    <section class="gallery-grid-section">
+        <div class="container">
+            <h2><i class="fas fa-th"></i> All Photos</h2>
+            
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" onclick="openLightbox('images/gallery/image1.jpg', 'Beautiful Sunset', 'A breathtaking sunset in the Eastern Cape')">
+                    <img src="images/gallery/image1.jpg" alt="Sunset">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Sunset</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" onclick="openLightbox('images/gallery/image2.jpg', 'WSU Campus', 'My journey at Walter Sisulu University')">
+                    <img src="images/gallery/image2.jpg" alt="Campus">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>WSU Campus</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" onclick="openLightbox('images/gallery/image3.jpg', 'Community', 'Spending time with family and friends')">
+                    <img src="images/gallery/image3.jpg" alt="Community">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Community</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" onclick="openLightbox('images/gallery/image4.jpg', 'Study Session', 'Late night coding sessions')">
+                    <img src="images/gallery/image4.jpg" alt="Study">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Study Session</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" onclick="openLightbox('images/gallery/image5.jpg', 'Nature Walk', 'Exploring the beautiful landscapes')">
+                    <img src="images/gallery/image5.jpg" alt="Nature">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Nature Walk</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" onclick="openLightbox('images/gallery/image6.jpg', 'Coding Session', 'Building projects and learning new skills')">
+                    <img src="images/gallery/image6.jpg" alt="Coding">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Coding Session</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== LIGHTBOX MODAL ========== -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="Lightbox Image">
+            <div class="lightbox-caption">
+                <h3 id="lightboxTitle">Image Title</h3>
+                <p id="lightboxDescription">Image description</p>
+            </div>
+        </div>
+        <a class="lightbox-prev" onclick="navigateLightbox(-1)">&#10094;</a>
+        <a class="lightbox-next" onclick="navigateLightbox(1)">&#10095;</a>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Yandisa Mbentsula. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
