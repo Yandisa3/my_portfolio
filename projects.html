@@ -1,400 +1,291 @@
-<!-- ========== PROJECTS GRID ========== -->
-<section class="projects-section">
-    <div class="container">
-        <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yandisa's Portfolio | Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-           
-            <div class="project-card" data-category="web" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
-                
-                <div class="project-image" style="position: relative; height: 200px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; font-size: 80px;">
-                    <i class="fas fa-shopping-cart"></i>
-                    <div class="project-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); display: flex; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease;">
-                        <a href="#" class="project-link" style="color: white; text-decoration: none; padding: 10px 25px; border: 2px solid white; border-radius: 30px;">View Live</a>
-                    </div>
-                </div>
-                <div class="project-info" style="padding: 20px;">
-                    <span class="project-tag" style="display: inline-block; padding: 4px 12px; background: #667eea; color: white; border-radius: 20px; font-size: 12px; font-weight: 500; margin-bottom: 10px;">Web Development</span>
-                    <h3 style="margin-bottom: 10px; color: #333;">E-Commerce Website</h3>
-                    <p style="color: #666; margin-bottom: 15px; font-size: 14px;">A fully functional online store with shopping cart and payment integration.</p>
-                    <div class="project-tech" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px;">
-                        <span style="padding: 4px 12px; background: #f0f2f5; border-radius: 20px; font-size: 12px;">HTML</span>
-                        <span style="padding: 4px 12px; background: #f0f2f5; border-radius: 20px; font-size: 12px;">CSS</span>
-                        <span style="padding: 4px 12px; background: #f0f2f5; border-radius: 20px; font-size: 12px;">JavaScript</span>
-                    </div>
-                    <div class="project-actions" style="display: flex; gap: 10px;">
-                        <button class="btn-demo" onclick="showProjectDetails('E-Commerce Website', 'A fully functional online store with shopping cart, payment integration, and user authentication. Built with HTML, CSS, and JavaScript.')" style="padding: 8px 20px; border: none; border-radius: 25px; font-size: 14px; cursor: pointer; background: #667eea; color: white; transition: all 0.3s ease;">
-                            <i class="fas fa-info-circle"></i> Details
-                        </button>
-                        <a href="#" class="btn-github" style="padding: 8px 20px; border: none; border-radius: 25px; font-size: 14px; cursor: pointer; text-decoration: none; background: #333; color: white; transition: all 0.3s ease;">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Yandisa</a>
             </div>
-
-            
-            <div class="project-card" data-category="design" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
-              
-                <div class="project-image" style="position: relative; height: 200px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; font-size: 80px;">
-                    <i class="fas fa-palette"></i>
-                    <div class="project-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); display: flex; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease;">
-                        <a href="#" class="project-link" style="color: white; text-decoration: none; padding: 10px 25px; border: 2px solid white; border-radius: 30px;">View Live</a>
-                    </div>
-                </div>
-                <div class="project-info" style="padding: 20px;">
-                    <span class="project-tag" style="display: inline-block; padding: 4px 12px; background: #667eea; color: white; border-radius: 20px; font-size: 12px; font-weight: 500; margin-bottom: 10px;">Design</span>
-                    <h3 style="margin-bottom: 10px; color: #333;">Modern Portfolio Design</h3>
-                    <p style="color: #666; margin-bottom: 15px; font-size: 14px;">A clean, responsive portfolio design with animations and professional layout.</p>
-                    <div class="project-tech" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px;">
-                        <span style="padding: 4px 12px; background: #f0f2f5; border-radius: 20px; font-size: 12px;">Figma</span>
-                        <span style="padding: 4px 12px; background: #f0f2f5; border-radius: 20px; font-size: 12px;">CSS</span>
-                        <span style="padding: 4px 12px; background: #f0f2f5; border-radius: 20px; font-size: 12px;">UI/UX</span>
-                    </div>
-                    <div class="project-actions" style="display: flex; gap: 10px;">
-                        <button class="btn-demo" onclick="showProjectDetails('Modern Portfolio Design', 'A clean, responsive portfolio design with animations and professional layout. Created with Figma and CSS.')" style="padding: 8px 20px; border: none; border-radius: 25px; font-size: 14px; cursor: pointer; background: #667eea; color: white; transition: all 0.3s ease;">
-                            <i class="fas fa-info-circle"></i> Details
-                        </button>
-                        <a href="#" class="btn-github" style="padding: 8px 20px; border: none; border-radius: 25px; font-size: 14px; cursor: pointer; text-decoration: none; background: #333; color: white; transition: all 0.3s ease;">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+        </div>
+    </nav>
 
-           
-            <div class="project-card" data-category="app" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
-                
-                <div class="project-image" style="position: relative; height: 200px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); color: white; font-size: 80px;">
-                    <i class="fas fa-cloud-sun"></i>
-                    <div class="project-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); display: flex; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease;">
-                        <a href="#" class="project-link" style="color: white; text-decoration: none; padding: 10px 25px; border: 2px solid white; border-radius: 30px;">View Live</a>
-                    </div>
-                </div>
-                <div class="project-info" style="padding: 20px;">
-                    <span class="project-tag" style="display: inline-block; padding: 4px 12px; background: #667eea; color: white; border-radius: 20px; font-size: 12px; font-weight: 500; margin-bottom: 10px;">App Development</span>
-                    <h3 style="margin-bottom: 10px; color: #333;">Weather Forecast App</h3>
-                    <p style="color: #666; margin-bottom: 15px; font-size: 14px;">A mobile-friendly weather app showing real-time data using API integration.</p>
-                    <div class="project-tech" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px;">
-                        <span style="padding: 4px 12px; background: #f0f2f5; border-radius: 20px; font-size: 12px;">JavaScript</span>
-                        <span style="padding: 4px 12px; background: #f0f2f5; border-radius: 20px; font-size: 12px;">API</span>
-                        <span style="padding: 4px 12px; background: #f0f2f5; border-radius: 20px; font-size: 12px;">CSS</span>
-                    </div>
-                    <div class="project-actions" style="display: flex; gap: 10px;">
-                        <button class="btn-demo" onclick="showProjectDetails('Weather Forecast App', 'A mobile-friendly weather app that shows real-time weather data using API integration. Built with JavaScript and OpenWeatherMap API.')" style="padding: 8px 20px; border: none; border-radius: 25px; font-size: 14px; cursor: pointer; background: #667eea; color: white; transition: all 0.3s ease;">
-                            <i class="fas fa-info-circle"></i> Details
-                        </button>
-                        <a href="#" class="btn-github" style="padding: 8px 20px; border: none; border-radius: 25px; font-size: 14px; cursor: pointer; text-decoration: none; background: #333; color: white; transition: all 0.3s ease;">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="page-header">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>Here are some of the projects I've worked on</p>
+        </div>
+    </section>
+
+    <!-- ========== FILTER BUTTONS ========== -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterProjects('all', event)">All Projects</button>
+                <button class="filter-btn" onclick="filterProjects('web', event)">Web Development</button>
+                <button class="filter-btn" onclick="filterProjects('design', event)">Design</button>
+                <button class="filter-btn" onclick="filterProjects('app', event)">Apps</button>
             </div>
+        </div>
+    </section>
 
-            
-            <div class="project-card" data-category="web" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
-                
-                <div class="project-image" style="position: relative; height: 200px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); color: white; font-size: 80px;">
-                    <i class="fas fa-user-graduate"></i>
-                    <div class="project-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); display: flex; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease;">
-                        <a href="#" class="project-link" style="color: white; text-decoration: none; padding: 10px 25px; border: 2px solid white; border-radius: 30px;">View Live</a>
+    <!-- ========== PROJECTS GRID ========== -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid">
+
+                <!-- PROJECT 1: E-Commerce -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; justify-content: center; align-items: center; color: white; font-size: 80px;">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Live</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Web Development</span>
+                        <h3>E-Commerce Website</h3>
+                        <p>A fully functional online store with shopping cart and payment integration.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn-demo" onclick="showProjectDetails('E-Commerce Website', 'A fully functional online store with shopping cart, payment integration, and user authentication. Built with HTML, CSS, and JavaScript.')">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            <a href="#" class="btn-github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="project-info" style="padding: 20px;">
-                    <span class="project-tag" style="display: inline-block; padding: 4px 12px; background: #667eea; color: white; border-radius: 20px; font-size: 12px; font-weight: 500; margin-bottom: 10px;">Web Development</span>
-                    <h3 style="margin-bottom: 10px; color: #333;">Student Management System</h3>
-                    <p style="color: #666; margin-bottom: 15px; font-size: 14px;">A database-driven system to manage student records, grades, and attendance.</p>
-                    <div class="project-tech" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px;">
-                        <span style="padding: 4px 12px; background: #f0f2f5; border-radius: 20px; font-size: 12px;">PHP</span>
-                        <span style="padding: 4px 12px; background: #f0f2f5; border-radius: 20px; font-size: 12px;">MySQL</span>
-                        <span style="padding: 4px 12px; background: #f0f2f5; border-radius: 20px; font-size: 12px;">HTML</span>
+
+                <!-- PROJECT 2: Portfolio Design -->
+                <div class="project-card" data-category="design">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; justify-content: center; align-items: center; color: white; font-size: 80px;">
+                        <i class="fas fa-palette"></i>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Live</a>
+                        </div>
                     </div>
-                    <div class="project-actions" style="display: flex; gap: 10px;">
-                        <button class="btn-demo" onclick="showProjectDetails('Student Management System', 'A database-driven system to manage student records, grades, and attendance. Built with PHP and MySQL.')" style="padding: 8px 20px; border: none; border-radius: 25px; font-size: 14px; cursor: pointer; background: #667eea; color: white; transition: all 0.3s ease;">
-                            <i class="fas fa-info-circle"></i> Details
-                        </button>
-                        <a href="#" class="btn-github" style="padding: 8px 20px; border: none; border-radius: 25px; font-size: 14px; cursor: pointer; text-decoration: none; background: #333; color: white; transition: all 0.3s ease;">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
+                    <div class="project-info">
+                        <span class="project-tag">Design</span>
+                        <h3>Modern Portfolio Design</h3>
+                        <p>A clean, responsive portfolio design with animations and professional layout.</p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                            <span>CSS</span>
+                            <span>UI/UX</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn-demo" onclick="showProjectDetails('Modern Portfolio Design', 'A clean, responsive portfolio design with animations and professional layout. Created with Figma and CSS.')">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            <a href="#" class="btn-github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- PROJECT 3: Weather App -->
+                <div class="project-card" data-category="app">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); display: flex; justify-content: center; align-items: center; color: white; font-size: 80px;">
+                        <i class="fas fa-cloud-sun"></i>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Live</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">App Development</span>
+                        <h3>Weather Forecast App</h3>
+                        <p>A mobile-friendly weather app showing real-time data using API integration.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn-demo" onclick="showProjectDetails('Weather Forecast App', 'A mobile-friendly weather app that shows real-time weather data using API integration. Built with JavaScript and OpenWeatherMap API.')">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            <a href="#" class="btn-github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 4: Student Management -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); display: flex; justify-content: center; align-items: center; color: white; font-size: 80px;">
+                        <i class="fas fa-user-graduate"></i>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Live</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Web Development</span>
+                        <h3>Student Management System</h3>
+                        <p>A database-driven system to manage student records, grades, and attendance.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>HTML</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn-demo" onclick="showProjectDetails('Student Management System', 'A database-driven system to manage student records, grades, and attendance. Built with PHP and MySQL.')">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            <a href="#" class="btn-github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 5: Mobile App UI -->
+                <div class="project-card" data-category="design">
+                    <div class="project-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); display: flex; justify-content: center; align-items: center; color: #e06040; font-size: 80px;">
+                        <i class="fas fa-dumbbell"></i>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Live</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Design</span>
+                        <h3>Mobile App UI Design</h3>
+                        <p>Modern and intuitive UI design for a fitness tracking mobile application.</p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                            <span>UI/UX</span>
+                            <span>Prototyping</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn-demo" onclick="showProjectDetails('Mobile App UI Design', 'Modern and intuitive UI design for a fitness tracking mobile application with dark theme. Created using Figma.')">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            <a href="#" class="btn-github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 6: To-Do List -->
+                <div class="project-card" data-category="app">
+                    <div class="project-image" style="background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%); display: flex; justify-content: center; align-items: center; color: white; font-size: 80px;">
+                        <i class="fas fa-tasks"></i>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Live</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">App Development</span>
+                        <h3>To-Do List App</h3>
+                        <p>An interactive task manager with drag-and-drop functionality and local storage.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>LocalStorage</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn-demo" onclick="showProjectDetails('To-Do List App', 'An interactive task manager with drag-and-drop functionality, local storage, and dark mode. Built with pure JavaScript.')">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            <a href="#" class="btn-github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+        </div>
+    </section>
 
-            <!-- PROJECT 5: Mobile App UI -->
-            <div class="project-card" data-category="design" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
-                <!-- FIXED: Added "position: relative;" -->
-                <div class="project-image" style="position: relative; height: 200px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); color: #e06040; font-size: 80px;">
-                    <i class="fas fa-dumbbell"></i>
-                    <div class="project-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); display: flex; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease;">
-                        <a href="#" class="project-link" style="color: white; text-decoration: none; padding: 10px 25px; border: 2px solid white; border-radius: 30px;">View Live</a>
-                    </div>
-                </div>
-                <div class="project-info" style="padding: 20px;">
-                    <span class="project-tag" style="display: inline-block; padding: 4px 12px; background: #667eea; color: white; border-radius: 20px; font-size: 12px; font-weight: 500; margin-bottom: 10px;">Design</span>
-                    <h3 style="margin-bottom: 10px; color: #333;">Mobile App UI Design</h3>
-                    <p style="color: #666; margin-bottom: 15px; font-size: 14px;">Modern and intuitive UI design for a fitness tracking mobile application.</p>
-                    <div class="project-tech" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px;">
-                        <span style="padding: 4px 12px; background: #f0f2f5; border-radius: 20px; font-size: 12px;">Figma</span>
-                        <span style="padding: 4px 12px; background: #f0f2f5; border-radius: 20px; font-size: 12px;">UI/UX</span>
-                        <span style="padding: 4px 12px; background: #f0f2f5; border-radius: 20px; font-size: 12px;">Prototyping</span>
-                    </div>
-                    <div class="project-actions" style="display: flex; gap: 10px;">
-                        <button class="btn-demo" onclick="showProjectDetails('Mobile App UI Design', 'Modern and intuitive UI design for a fitness tracking mobile application with dark theme. Created using Figma.')" style="padding: 8px 20px; border: none; border-radius: 25px; font-size: 14px; cursor: pointer; background: #667eea; color: white; transition: all 0.3s ease;">
-                            <i class="fas fa-info-circle"></i> Details
-                        </button>
-                        <a href="#" class="btn-github" style="padding: 8px 20px; border: none; border-radius: 25px; font-size: 14px; cursor: pointer; text-decoration: none; background: #333; color: white; transition: all 0.3s ease;">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <!-- ========== PROJECT STATISTICS ========== -->
+    <section class="stats-section">
+        <div class="container">
+            <h2><i class="fas fa-chart-bar"></i> Project Statistics</h2>
+            <table class="project-stats-table">
+                <thead>
+                    <tr>
+                        <th><i class="fas fa-tag"></i> Project Category</th>
+                        <th><i class="fas fa-cubes"></i> Number of Projects</th>
+                        <th><i class="fas fa-check-circle"></i> Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="fas fa-globe"></i> Web Development</td>
+                        <td>2</td>
+                        <td><span class="status-badge completed">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-paint-brush"></i> Design</td>
+                        <td>2</td>
+                        <td><span class="status-badge in-progress">In Progress</span></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-mobile-alt"></i> App Development</td>
+                        <td>2</td>
+                        <td><span class="status-badge completed">Completed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-            <!-- PROJECT 6: To-Do List -->
-            <div class="project-card" data-category="app" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
-                <!-- FIXED: Added "position: relative;" -->
-                <div class="project-image" style="position: relative; height: 200px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%); color: white; font-size: 80px;">
-                    <i class="fas fa-tasks"></i>
-                    <div class="project-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); display: flex; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease;">
-                        <a href="#" class="project-link" style="color: white; text-decoration: none; padding: 10px 25px; border: 2px solid white; border-radius: 30px;">View Live</a>
-                    </div>
-                </div>
-                <div class="project-info" style="padding: 20px;">
-                    <span class="project-tag" style="display: inline-block; padding: 4px 12px; background: #667eea; color: white; border-radius: 20px; font-size: 12px; font-weight: 500; margin-bottom: 10px;">App Development</span>
-                    <h3 style="margin-bottom: 10px; color: #333;">To-Do List App</h3>
-                    <p style="color: #666; margin-bottom: 15px; font-size: 14px;">An interactive task manager with drag-and-drop functionality and local storage.</p>
-                    <div class="project-tech" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px;">
-                        <span style="padding: 4px 12px; background: #f0f2f5; border-radius: 20px; font-size: 12px;">JavaScript</span>
-                        <span style="padding: 4px 12px; background: #f0f2f5; border-radius: 20px; font-size: 12px;">LocalStorage</span>
-                        <span style="padding: 4px 12px; background: #f0f2f5; border-radius: 20px; font-size: 12px;">CSS</span>
-                    </div>
-                    <div class="project-actions" style="display: flex; gap: 10px;">
-                        <button class="btn-demo" onclick="showProjectDetails('To-Do List App', 'An interactive task manager with drag-and-drop functionality, local storage, and dark mode. Built with pure JavaScript.')" style="padding: 8px 20px; border: none; border-radius: 25px; font-size: 14px; cursor: pointer; background: #667eea; color: white; transition: all 0.3s ease;">
-                            <i class="fas fa-info-circle"></i> Details
-                        </button>
-                        <a href="#" class="btn-github" style="padding: 8px 20px; border: none; border-radius: 25px; font-size: 14px; cursor: pointer; text-decoration: none; background: #333; color: white; transition: all 0.3s ease;">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
+    <!-- ========== PROJECT MODAL ========== -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Project Title</h2>
+            <p id="modalDescription">Project description goes here.</p>
+            <button onclick="closeModal()" class="btn btn-primary">Close</button>
         </div>
     </div>
-</section><!-- ========== PROJECTS GRID ========== -->
-<section class="projects-section">
-    <div class="container">
-        <div class="projects-grid">
 
-            <!-- PROJECT 1: E-Commerce -->
-            <div class="project-card" data-category="web">
-                <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; justify-content: center; align-items: center; color: white; font-size: 80px;">
-                    <i class="fas fa-shopping-cart"></i>
-                    <div class="project-overlay">
-                        <a href="#" class="project-link">View Live</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <span class="project-tag">Web Development</span>
-                    <h3>E-Commerce Website</h3>
-                    <p>A fully functional online store with shopping cart and payment integration.</p>
-                    <div class="project-tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="project-actions">
-                        <button class="btn-demo" onclick="showProjectDetails('E-Commerce Website', 'A fully functional online store with shopping cart, payment integration, and user authentication. Built with HTML, CSS, and JavaScript.')">
-                            <i class="fas fa-info-circle"></i> Details
-                        </button>
-                        <a href="#" class="btn-github">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Yandisa Mbentsula. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
-
-            <!-- PROJECT 2: Portfolio Design -->
-            <div class="project-card" data-category="design">
-                <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; justify-content: center; align-items: center; color: white; font-size: 80px;">
-                    <i class="fas fa-palette"></i>
-                    <div class="project-overlay">
-                        <a href="#" class="project-link">View Live</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <span class="project-tag">Design</span>
-                    <h3>Modern Portfolio Design</h3>
-                    <p>A clean, responsive portfolio design with animations and professional layout.</p>
-                    <div class="project-tech">
-                        <span>Figma</span>
-                        <span>CSS</span>
-                        <span>UI/UX</span>
-                    </div>
-                    <div class="project-actions">
-                        <button class="btn-demo" onclick="showProjectDetails('Modern Portfolio Design', 'A clean, responsive portfolio design with animations and professional layout. Created with Figma and CSS.')">
-                            <i class="fas fa-info-circle"></i> Details
-                        </button>
-                        <a href="#" class="btn-github">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROJECT 3: Weather App -->
-            <div class="project-card" data-category="app">
-                <div class="project-image" style="background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); display: flex; justify-content: center; align-items: center; color: white; font-size: 80px;">
-                    <i class="fas fa-cloud-sun"></i>
-                    <div class="project-overlay">
-                        <a href="#" class="project-link">View Live</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <span class="project-tag">App Development</span>
-                    <h3>Weather Forecast App</h3>
-                    <p>A mobile-friendly weather app showing real-time data using API integration.</p>
-                    <div class="project-tech">
-                        <span>JavaScript</span>
-                        <span>API</span>
-                        <span>CSS</span>
-                    </div>
-                    <div class="project-actions">
-                        <button class="btn-demo" onclick="showProjectDetails('Weather Forecast App', 'A mobile-friendly weather app that shows real-time weather data using API integration. Built with JavaScript and OpenWeatherMap API.')">
-                            <i class="fas fa-info-circle"></i> Details
-                        </button>
-                        <a href="#" class="btn-github">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROJECT 4: Student Management -->
-            <div class="project-card" data-category="web">
-                <div class="project-image" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); display: flex; justify-content: center; align-items: center; color: white; font-size: 80px;">
-                    <i class="fas fa-user-graduate"></i>
-                    <div class="project-overlay">
-                        <a href="#" class="project-link">View Live</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <span class="project-tag">Web Development</span>
-                    <h3>Student Management System</h3>
-                    <p>A database-driven system to manage student records, grades, and attendance.</p>
-                    <div class="project-tech">
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                        <span>HTML</span>
-                    </div>
-                    <div class="project-actions">
-                        <button class="btn-demo" onclick="showProjectDetails('Student Management System', 'A database-driven system to manage student records, grades, and attendance. Built with PHP and MySQL.')">
-                            <i class="fas fa-info-circle"></i> Details
-                        </button>
-                        <a href="#" class="btn-github">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROJECT 5: Mobile App UI -->
-            <div class="project-card" data-category="design">
-                <div class="project-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); display: flex; justify-content: center; align-items: center; color: #e06040; font-size: 80px;">
-                    <i class="fas fa-dumbbell"></i>
-                    <div class="project-overlay">
-                        <a href="#" class="project-link">View Live</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <span class="project-tag">Design</span>
-                    <h3>Mobile App UI Design</h3>
-                    <p>Modern and intuitive UI design for a fitness tracking mobile application.</p>
-                    <div class="project-tech">
-                        <span>Figma</span>
-                        <span>UI/UX</span>
-                        <span>Prototyping</span>
-                    </div>
-                    <div class="project-actions">
-                        <button class="btn-demo" onclick="showProjectDetails('Mobile App UI Design', 'Modern and intuitive UI design for a fitness tracking mobile application with dark theme. Created using Figma.')">
-                            <i class="fas fa-info-circle"></i> Details
-                        </button>
-                        <a href="#" class="btn-github">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROJECT 6: To-Do List -->
-            <div class="project-card" data-category="app">
-                <div class="project-image" style="background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%); display: flex; justify-content: center; align-items: center; color: white; font-size: 80px;">
-                    <i class="fas fa-tasks"></i>
-                    <div class="project-overlay">
-                        <a href="#" class="project-link">View Live</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <span class="project-tag">App Development</span>
-                    <h3>To-Do List App</h3>
-                    <p>An interactive task manager with drag-and-drop functionality and local storage.</p>
-                    <div class="project-tech">
-                        <span>JavaScript</span>
-                        <span>LocalStorage</span>
-                        <span>CSS</span>
-                    </div>
-                    <div class="project-actions">
-                        <button class="btn-demo" onclick="showProjectDetails('To-Do List App', 'An interactive task manager with drag-and-drop functionality, local storage, and dark mode. Built with pure JavaScript.')">
-                            <i class="fas fa-info-circle"></i> Details
-                        </button>
-                        <a href="#" class="btn-github">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
-</section>
+    </footer>
 
-<!-- ========== PROJECT STATISTICS ========== -->
-<section class="stats-section">
-    <div class="container">
-        <h2><i class="fas fa-chart-bar"></i> Project Statistics</h2>
-        <table class="project-stats-table">
-            <thead>
-                <tr>
-                    <th><i class="fas fa-tag"></i> Project Category</th>
-                    <th><i class="fas fa-cubes"></i> Number of Projects</th>
-                    <th><i class="fas fa-check-circle"></i> Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><i class="fas fa-globe"></i> Web Development</td>
-                    <td>2</td>
-                    <td><span class="status-badge completed">Completed</span></td>
-                </tr>
-                <tr>
-                    <td><i class="fas fa-paint-brush"></i> Design</td>
-                    <td>2</td>
-                    <td><span class="status-badge in-progress">In Progress</span></td>
-                </tr>
-                <tr>
-                    <td><i class="fas fa-mobile-alt"></i> App Development</td>
-                    <td>2</td>
-                    <td><span class="status-badge completed">Completed</span></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</section>
+    <script src="js/script.js"></script>
 
-<!-- ========== PROJECT MODAL ========== -->
-<div id="projectModal" class="modal">
-    <div class="modal-content">
-        <span class="modal-close" onclick="closeModal()">&times;</span>
-        <h2 id="modalTitle">Project Title</h2>
-        <p id="modalDescription">Project description goes here.</p>
-        <button onclick="closeModal()" class="btn btn-primary">Close</button>
-    </div>
-</div>
+</body>
+</html>
